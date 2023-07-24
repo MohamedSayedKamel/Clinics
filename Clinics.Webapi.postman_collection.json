@@ -1,0 +1,1115 @@
+{
+	"info": {
+		"_postman_id": "ddb960b9-cdc7-4e8b-af76-e46905b31ce5",
+		"name": "Clinics.Webapi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "Appointment Get Pharmacy Schedule",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "ClientKey",
+								"value": "ZYDPLLBWSK3MVQJSIYHB1OR2JXCY0X2C5UJ2QAR2MAAIT5Q00",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "AppointmentDate",
+									"value": "1954-12-08T20:31:15.174Z"
+								},
+								{
+									"key": "PharmacyId",
+									"value": "62401264"
+								},
+								{
+									"key": "DevOsVersion",
+									"value": "do non ex"
+								},
+								{
+									"key": "DevOsName",
+									"value": "exercitation amet dolore"
+								},
+								{
+									"key": "Language",
+									"value": "elit irure esse officia fugiat"
+								},
+								{
+									"key": "DevImei",
+									"value": "laborum irure"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/GetPharmacySchedule",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"GetPharmacySchedule"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "AppointmentDate",
+											"value": "1954-12-08T20:31:15.174Z"
+										},
+										{
+											"key": "PharmacyId",
+											"value": "62401264"
+										},
+										{
+											"key": "DevOsVersion",
+											"value": "do non ex"
+										},
+										{
+											"key": "DevOsName",
+											"value": "exercitation amet dolore"
+										},
+										{
+											"key": "Language",
+											"value": "elit irure esse officia fugiat"
+										},
+										{
+											"key": "DevImei",
+											"value": "laborum irure"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/GetPharmacySchedule",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"GetPharmacySchedule"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"AvaliableTime\": [\n    {\n      \"DateTime\": \"2011-06-24T17:03:19.941Z\",\n      \"Time\": \"proident voluptate cupidatat anim\"\n    },\n    {\n      \"DateTime\": \"1996-03-26T15:16:12.014Z\",\n      \"Time\": \"velit ea reprehenderit proident\"\n    }\n  ],\n  \"StatusCode\": -26571174,\n  \"Message\": \"veniam et anim ut\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Appointment Get Patient Appointment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "ClientKey",
+								"value": "ZYDPLLBWSK3MVQJSIYHB1OR2JXCY0X2C5UJ2QAR2MAAIT5Q00",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "IsUpcoming",
+									"value": "false"
+								},
+								{
+									"key": "PhoneNumber",
+									"value": "occaecat Duis"
+								},
+								{
+									"key": "DevOsVersion",
+									"value": "reprehenderit ea velit"
+								},
+								{
+									"key": "DevOsName",
+									"value": "fugiat exercitation min"
+								},
+								{
+									"key": "Language",
+									"value": "in est amet"
+								},
+								{
+									"key": "DevImei",
+									"value": "sit ullamco Excepteur dolore culpa"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/GetPatientAppointment",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"GetPatientAppointment"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "IsUpcoming",
+											"value": "false"
+										},
+										{
+											"key": "PhoneNumber",
+											"value": "occaecat Duis"
+										},
+										{
+											"key": "DevOsVersion",
+											"value": "reprehenderit ea velit"
+										},
+										{
+											"key": "DevOsName",
+											"value": "fugiat exercitation min"
+										},
+										{
+											"key": "Language",
+											"value": "in est amet"
+										},
+										{
+											"key": "DevImei",
+											"value": "sit ullamco Excepteur dolore culpa"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/GetPatientAppointment",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"GetPatientAppointment"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"resultList\": [\n    {\n      \"Id\": 91404391,\n      \"PatientId\": 56419976,\n      \"Date\": \"2014-12-14T08:45:38.688Z\",\n      \"PharmacyName\": \"labore et\",\n      \"DoctorName\": \"occaecat in reprehenderit\",\n      \"PharmacyId\": -98472052\n    },\n    {\n      \"Id\": 46692448,\n      \"PatientId\": -15078063,\n      \"Date\": \"2013-08-03T02:35:39.381Z\",\n      \"PharmacyName\": \"qui\",\n      \"DoctorName\": \"enim ut\",\n      \"PharmacyId\": -46694968\n    }\n  ],\n  \"StatusCode\": -25956035,\n  \"Message\": \"ut nostrud veniam\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Appointment Save Appointment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "ClientKey",
+								"value": "ZYDPLLBWSK3MVQJSIYHB1OR2JXCY0X2C5UJ2QAR2MAAIT5Q00",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "AppointmentDate",
+									"value": "1955-07-19T08:28:48.045Z"
+								},
+								{
+									"key": "Notes",
+									"value": "cillum occaecat in quis non"
+								},
+								{
+									"key": "PharmacyId",
+									"value": "43250030"
+								},
+								{
+									"key": "PhoneNumber",
+									"value": "in laborum qui"
+								},
+								{
+									"key": "DevOsVersion",
+									"value": "aliquip enim"
+								},
+								{
+									"key": "DevOsName",
+									"value": "sint aute"
+								},
+								{
+									"key": "Language",
+									"value": "in nisi"
+								},
+								{
+									"key": "DevImei",
+									"value": "dolor in deserunt fugiat"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/SaveAppointment",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"SaveAppointment"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "AppointmentDate",
+											"value": "1955-07-19T08:28:48.045Z"
+										},
+										{
+											"key": "Notes",
+											"value": "cillum occaecat in quis non"
+										},
+										{
+											"key": "PharmacyId",
+											"value": "43250030"
+										},
+										{
+											"key": "PhoneNumber",
+											"value": "in laborum qui"
+										},
+										{
+											"key": "DevOsVersion",
+											"value": "aliquip enim"
+										},
+										{
+											"key": "DevOsName",
+											"value": "sint aute"
+										},
+										{
+											"key": "Language",
+											"value": "in nisi"
+										},
+										{
+											"key": "DevImei",
+											"value": "dolor in deserunt fugiat"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/SaveAppointment",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"SaveAppointment"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"StatusCode\": -4413967,\n  \"Message\": \"nulla in aliquip\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Appointment Delete Appointment",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "ClientKey",
+								"value": "ZYDPLLBWSK3MVQJSIYHB1OR2JXCY0X2C5UJ2QAR2MAAIT5Q00",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "AppointmentId",
+									"value": "97096109"
+								},
+								{
+									"key": "PatientId",
+									"value": "83429367"
+								},
+								{
+									"key": "PhoneNumber",
+									"value": "Ut voluptate enim aliquip"
+								},
+								{
+									"key": "DevOsVersion",
+									"value": "nisi ea consequat"
+								},
+								{
+									"key": "DevOsName",
+									"value": "deserunt magna ea sunt dolore"
+								},
+								{
+									"key": "Language",
+									"value": "proident voluptate"
+								},
+								{
+									"key": "DevImei",
+									"value": "commodo"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/DeleteAppointment",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"DeleteAppointment"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "AppointmentId",
+											"value": "97096109"
+										},
+										{
+											"key": "PatientId",
+											"value": "83429367"
+										},
+										{
+											"key": "PhoneNumber",
+											"value": "Ut voluptate enim aliquip"
+										},
+										{
+											"key": "DevOsVersion",
+											"value": "nisi ea consequat"
+										},
+										{
+											"key": "DevOsName",
+											"value": "deserunt magna ea sunt dolore"
+										},
+										{
+											"key": "Language",
+											"value": "proident voluptate"
+										},
+										{
+											"key": "DevImei",
+											"value": "commodo"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/DeleteAppointment",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"DeleteAppointment"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"StatusCode\": -4413967,\n  \"Message\": \"nulla in aliquip\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Appointment Update Appointment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "ClientKey",
+								"value": "ZYDPLLBWSK3MVQJSIYHB1OR2JXCY0X2C5UJ2QAR2MAAIT5Q00",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ApointmentId",
+									"value": "-87614089"
+								},
+								{
+									"key": "PatientId",
+									"value": "-6894220"
+								},
+								{
+									"key": "AppointmentDate",
+									"value": "2009-11-01T19:57:03.677Z"
+								},
+								{
+									"key": "DevOsVersion",
+									"value": "amet"
+								},
+								{
+									"key": "DevOsName",
+									"value": "exercitation mollit pariatur"
+								},
+								{
+									"key": "Language",
+									"value": "minim Excepteur commodo"
+								},
+								{
+									"key": "DevImei",
+									"value": "minim"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/UpdateAppointment",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"UpdateAppointment"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "ApointmentId",
+											"value": "-87614089"
+										},
+										{
+											"key": "PatientId",
+											"value": "-6894220"
+										},
+										{
+											"key": "AppointmentDate",
+											"value": "2009-11-01T19:57:03.677Z"
+										},
+										{
+											"key": "DevOsVersion",
+											"value": "amet"
+										},
+										{
+											"key": "DevOsName",
+											"value": "exercitation mollit pariatur"
+										},
+										{
+											"key": "Language",
+											"value": "minim Excepteur commodo"
+										},
+										{
+											"key": "DevImei",
+											"value": "minim"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/UpdateAppointment",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"UpdateAppointment"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"StatusCode\": -4413967,\n  \"Message\": \"nulla in aliquip\"\n}"
+						}
+					]
+				},
+				{
+					"name": "City Get Cities",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "ClientKey",
+								"value": "ZYDPLLBWSK3MVQJSIYHB1OR2JXCY0X2C5UJ2QAR2MAAIT5Q00",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"PageNumber\": 0, // mandatory - page number to retrieve\r\n    \"PageSize\": 5, // mandatory - page size \r\n    \"EnName\": \"\", // optional - filter by English name \r\n    \"ArName\": \"\", // optional - filter by Arabic name \r\n    \"DevOsVersion\": \"string\", // Mobile only \r\n    \"DevOsName\": \"string\", // Mobile only\r\n    \"Language\": \"english\", // mandatory - localization for request (english , arabic) \r\n    \"DevImei\": \"string\" // Mobile only\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/GetCities",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"GetCities"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "PageNumber",
+											"value": "46726537"
+										},
+										{
+											"key": "PageSize",
+											"value": "32723362"
+										},
+										{
+											"key": "EnName",
+											"value": "ea ut"
+										},
+										{
+											"key": "ArName",
+											"value": "magna Duis velit"
+										},
+										{
+											"key": "DevOsVersion",
+											"value": "tempor Lorem"
+										},
+										{
+											"key": "DevOsName",
+											"value": "ipsum ut"
+										},
+										{
+											"key": "Language",
+											"value": "Ut"
+										},
+										{
+											"key": "DevImei",
+											"value": "eu elit pariatur"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/GetCities",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"GetCities"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"Cities\": [\n    {\n      \"Id\": 21133287,\n      \"Name\": \"dolor sit aliquip velit\"\n    },\n    {\n      \"Id\": -50094739,\n      \"Name\": \"ut non velit Excepteur\"\n    }\n  ],\n  \"TotalCount\": 17476054,\n  \"StatusCode\": -65070246,\n  \"Message\": \"incididunt\"\n}"
+						}
+					]
+				},
+				{
+					"name": "City Get Pharamcies City",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "ClientKey",
+								"value": "ZYDPLLBWSK3MVQJSIYHB1OR2JXCY0X2C5UJ2QAR2MAAIT5Q00",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "PageNumber",
+									"value": "64194662"
+								},
+								{
+									"key": "PageSize",
+									"value": "44145920"
+								},
+								{
+									"key": "PharmacyName",
+									"value": "elit"
+								},
+								{
+									"key": "PharmacyCode",
+									"value": "Excepteur in nostrud"
+								},
+								{
+									"key": "CityId",
+									"value": "78400244"
+								},
+								{
+									"key": "DevOsVersion",
+									"value": "elit"
+								},
+								{
+									"key": "DevOsName",
+									"value": "culpa"
+								},
+								{
+									"key": "Language",
+									"value": "deserunt laboris velit"
+								},
+								{
+									"key": "DevImei",
+									"value": "laborum sed dolor reprehenderit"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/GetPharamciesCity",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"GetPharamciesCity"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "PageNumber",
+											"value": "64194662"
+										},
+										{
+											"key": "PageSize",
+											"value": "44145920"
+										},
+										{
+											"key": "PharmacyName",
+											"value": "elit"
+										},
+										{
+											"key": "PharmacyCode",
+											"value": "Excepteur in nostrud"
+										},
+										{
+											"key": "CityId",
+											"value": "78400244"
+										},
+										{
+											"key": "DevOsVersion",
+											"value": "elit"
+										},
+										{
+											"key": "DevOsName",
+											"value": "culpa"
+										},
+										{
+											"key": "Language",
+											"value": "deserunt laboris velit"
+										},
+										{
+											"key": "DevImei",
+											"value": "laborum sed dolor reprehenderit"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/GetPharamciesCity",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"GetPharamciesCity"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"cityPharmacies\": [\n    {\n      \"Id\": -94141688,\n      \"PharmacyName\": \"incididunt non\",\n      \"PharmacyCode\": \"ad in nulla dolor\",\n      \"Address\": \"ex est id deserunt\",\n      \"Latitude\": -19454415.582846,\n      \"Longitude\": 25467118.187532604,\n      \"CityId\": -70263903,\n      \"CityName\": \"sed reprehenderit anim in\"\n    },\n    {\n      \"Id\": -76389089,\n      \"PharmacyName\": \"consecte\",\n      \"PharmacyCode\": \"id Duis adipisicing\",\n      \"Address\": \"dolore\",\n      \"Latitude\": -5965053.794105127,\n      \"Longitude\": 54209963.03765753,\n      \"CityId\": 99858898,\n      \"CityName\": \"ullamco ani\"\n    }\n  ],\n  \"TotalCount\": 61824165,\n  \"StatusCode\": 34814193,\n  \"Message\": \"dolor laboris\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Visit Get Patient Visits",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "ClientKey",
+								"value": "ZYDPLLBWSK3MVQJSIYHB1OR2JXCY0X2C5UJ2QAR2MAAIT5Q00",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "pageNumber",
+									"value": "-8754385"
+								},
+								{
+									"key": "pageSize",
+									"value": "-1698424"
+								},
+								{
+									"key": "PhoneNumber",
+									"value": "ut"
+								},
+								{
+									"key": "DevOsVersion",
+									"value": "aute in"
+								},
+								{
+									"key": "DevOsName",
+									"value": "voluptate deserunt Excepteur qui"
+								},
+								{
+									"key": "Language",
+									"value": "minim in consectetur con"
+								},
+								{
+									"key": "DevImei",
+									"value": "cupidatat"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/PatientVisits",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"PatientVisits"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "pageNumber",
+											"value": "-8754385"
+										},
+										{
+											"key": "pageSize",
+											"value": "-1698424"
+										},
+										{
+											"key": "PhoneNumber",
+											"value": "ut"
+										},
+										{
+											"key": "DevOsVersion",
+											"value": "aute in"
+										},
+										{
+											"key": "DevOsName",
+											"value": "voluptate deserunt Excepteur qui"
+										},
+										{
+											"key": "Language",
+											"value": "minim in consectetur con"
+										},
+										{
+											"key": "DevImei",
+											"value": "cupidatat"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/PatientVisits",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"PatientVisits"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"resultList\": [\n    {\n      \"Id\": -35826194,\n      \"PatientId\": -47921156,\n      \"Date\": \"1978-05-27T20:14:16.252Z\",\n      \"PharmacyName\": \"labore\",\n      \"DoctorName\": \"exercitation id\"\n    },\n    {\n      \"Id\": -3986969,\n      \"PatientId\": -94624175,\n      \"Date\": \"1987-06-06T21:29:09.559Z\",\n      \"PharmacyName\": \"dolore Ut velit\",\n      \"DoctorName\": \"culpa mollit tempor Lorem\"\n    }\n  ],\n  \"TotalCount\": -58862083,\n  \"StatusCode\": 51541616,\n  \"Message\": \"dolor dolor\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Visit Get Visit Details",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "ClientKey",
+								"value": "ZYDPLLBWSK3MVQJSIYHB1OR2JXCY0X2C5UJ2QAR2MAAIT5Q00",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"VisitId\": 4322, // mandatory - visit Id which was fetched from getPatientVisits API \r\n    \"DevOsVersion\": \"string\",\r\n    \"DevOsName\": \"string\",\r\n    \"Language\": \"english\",\r\n    \"DevImei\": \"string\"\r\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/VisitDetails",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"VisitDetails"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "VisitId",
+											"value": "-86656606"
+										},
+										{
+											"key": "DevOsVersion",
+											"value": "veniam ullamco magna enim"
+										},
+										{
+											"key": "DevOsName",
+											"value": "elit ad"
+										},
+										{
+											"key": "Language",
+											"value": "in"
+										},
+										{
+											"key": "DevImei",
+											"value": "laboris velit aute"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/VisitDetails",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"VisitDetails"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"Id\": -40365163,\n  \"PatientId\": 43114404,\n  \"DiabetiesTypeId\": -32614792,\n  \"DiabetesType\": \"Duis culpa\",\n  \"Weight\": 10235633.419948176,\n  \"Height\": 2308957.744195655,\n  \"BMI\": -20734030.50128615,\n  \"WaistCircumference\": 62969306.31103104,\n  \"NutritionTypeId\": -99842135,\n  \"PhysicalActivityTypeId\": 1010192,\n  \"SmokingStatusId\": 66427804,\n  \"Comorbidities\": \"dolore aute\",\n  \"OtherComorbidities\": \"laboris nostrud\",\n  \"CKDStage\": -97607744,\n  \"A1cTestDate\": \"1981-12-20T14:51:39.604Z\",\n  \"StrA1cTestDate\": \"l\",\n  \"A1cResult\": \"dolor ullamco dolore\",\n  \"AntihyperglycemicMedications\": \"officia amet\",\n  \"TherapyAdherence\": \"in enim ullamco\",\n  \"FastingBG\": -2603825.2081225514,\n  \"PostPrandialBG\": -45153448.92388984,\n  \"HypoglycemicEpisodes\": \"exercitation ex cupidat\",\n  \"TotalHemoglobin\": 57816141.28638241,\n  \"UricAcidMeasurement\": -81246392.08920877,\n  \"BP1\": \"Excepteur cupidatat\",\n  \"BP2\": \"eiusmod dolor ex\",\n  \"BP3\": \"nostrud laboris\",\n  \"Pulse1\": -84173896,\n  \"Pulse2\": -6969223,\n  \"Pulse3\": -86165096,\n  \"AntihypertensiveDrugs\": \"mollit\",\n  \"CVDSymptoms\": false,\n  \"LipidsTG\": 57502330.06922722,\n  \"LipidsLDLC\": 14663663.625113264,\n  \"LipidsNonHDLC\": 12809481.165197447,\n  \"LidpidsTestDate\": \"1957-10-04T02:02:38.167Z\",\n  \"StrLidpidsTestDate\": \"eiusmod commodo\",\n  \"LipidLoweringTherapyTypeId\": -79552807,\n  \"LipidLoweringTherapyReason\": \"proident nisi eiusmod quis\",\n  \"LipidLoweringTherapyDrugs\": \"adipisicing in mollit\",\n  \"ACEInhibitorTypeId\": -61849243,\n  \"ACEInhibitorReason\": \"Ut\",\n  \"ACEInhibitorDrugs\": \"aute non fugiat\",\n  \"AntiplateletAgent\": false,\n  \"AntiplateletAgentDrugs\": \"aliqua\",\n  \"SerumCreatinineTestDate\": \"1999-09-12T01:56:13.542Z\",\n  \"StrSerumCreatinineTestDate\": \"tempor sit\",\n  \"SerumCreatinine\": -51219182.65533072,\n  \"CKD\": true,\n  \"DilatedEyeExamDate\": \"2020-05-04T07:54:47.561Z\",\n  \"StrDilatedEyeExamDate\": \"enim consequat\",\n  \"DilatedEyeExamReminded\": true,\n  \"Retinopathy\": false,\n  \"SeverityTherapies\": \"non commodo velit\",\n  \"NeuropathySymptoms\": true,\n  \"DiabeticFootExamSensation\": \"in exercitation commodo\",\n  \"DiabeticFootExamPulses\": \"non anim est\",\n  \"DiabeticFootExamSkin\": \"consectetur\",\n  \"DiabeticFootExamOther\": \"in do aliqua sunt dolore\",\n  \"Neuropathy\": false,\n  \"ScreenForDepressionAnxiety\": \"minim qui\",\n  \"InfluenzaVaccination\": true,\n  \"InfluenzaVaccinationReason\": \"enim\",\n  \"InfluenzaVaccinationDate\": \"1997-08-01T05:50:08.644Z\",\n  \"StrInfluenzaVaccinationDate\": \"occaecat\",\n  \"RecallAppointmentGiven\": false,\n  \"NotedInRecallSystem\": true,\n  \"CreatedOn\": \"1992-07-31T17:43:30.263Z\",\n  \"CreatedBy\": 60409365,\n  \"PharmacyCode\": \"deserunt nisi in tempor\",\n  \"NutritionType\": \"officia dolor reprehende\",\n  \"PhysicalActivityType\": \"dolor dolore\",\n  \"SmokingStatus\": \"pariatur occaecat aliqua ea\",\n  \"StrCVDSymptoms\": \"ut culpa tempor aliqua exercitation\",\n  \"StrComorbidities\": \"Excepteur aliquip eiusmod incididunt tempor\",\n  \"LipidLoweringTherapyType\": \"voluptate laboris do sed\",\n  \"ACEInhibitorType\": \"cupidatat id exercitation\",\n  \"StrAntiplateletAgent\": \"aliquip irure esse dolore dolor\",\n  \"StrCKD\": \"ullamco officia commodo tempor\",\n  \"StrDilatedEyeExamReminded\": \"ullamco aliqua mollit deserunt\",\n  \"StrRetinopathy\": \"est ut esse aliquip\",\n  \"StrNeuropathySymptoms\": \"i\",\n  \"StrNeuropathy\": \"minim enim consectetur\",\n  \"StrInfluenzaVaccination\": \"ut sint eiusmod aliquip minim\",\n  \"StrRecallAppointmentGiven\": \"eu sit aliquip\",\n  \"StrNotedInRecallSystem\": \"non fugiat in\",\n  \"DiabetesDateDiagnosed\": \"2004-01-15T06:59:48.576Z\",\n  \"StrDiabetesDateDiagnosed\": \"ex dolore\",\n  \"StatusCode\": -33036274,\n  \"Message\": \"exercitation voluptate\"\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://178.20.147.67:9090",
+			"type": "string"
+		}
+	]
+}
